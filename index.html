@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Web Programming</h1>
+        <p>Suwilanji George Ngwira - 202506490</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">My Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+
+        <a href="https://developer.mozilla.org/en-US/docs/Learn"
+           target="_blank">
+            Learn Web Development
+        </a>
+    </nav>
+
+    <main>
+
+        <!-- About Me -->
+        <section id="about" class="content-section">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Suwilanji Ngwira. I am learning web technologies.
+                I am interested in understanding how websites are created using
+                HTML and CSS. I enjoy learning through practical activities
+                because I am a visual learner, and it helps me understand
+                concepts better.
+
+                My end goal is to improve and eventually create websites that
+                are easy for people to use. Most of all, I would like to develop
+                a betting site or business site.
+            </p>
+
+        </section>
+
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Playing football</li>
+                <li>Listening to music</li>
+                <li>Watching movies</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Learning Plan -->
+        <section id="learning">
+
+            <h2>My Learning Plan</h2>
+
+            <h3>Steps I will take to improve my web skills</h3>
+
+            <ol>
+                <li>Practice HTML and CSS.</li>
+                <li>Keep making small websites to apply what I learn.</li>
+                <li>Practice using VS Code and Git for my projects.</li>
+            </ol>
+
+
+            <table>
+
+                <caption>My Weekly Web Learning Plan</caption>
+
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Create a simple webpage</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS</td>
+                    <td>Style my web page</td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>javascript</td>
+                    <td> experiment with the page</td>
+                </tr>
+
+
+            </table>
+
+        </section>
+
+
+        <!-- Photos -->
+        <section id="photos">
+
+            <h2>My Photos</h2>
+
+            <h3>My Photos Gallery</h3>
+
+            <figure>
+                <img src="images/PXL3.jpg"
+                     alt="Me playing the guitar"
+                     width="300">
+
+                <figcaption>
+                    Me playing the guitar at a friend's place
+                </figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/PXL2.jpg"
+                     alt="Me sitting in a chair at a restaurant"
+                     width="300">
+
+                <figcaption>
+                    Me sitting in a chair at a restaurant
+                </figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/PXL4.jpg"
+                     alt="Outside taking in the view"
+                     width="300">
+
+                <figcaption>
+                    Outside taking in the view
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/PXL1.JPG"
+                     alt="picture with my mum "
+                     width="300">
+
+                <figcaption>
+                    with mrs ngwira my mum❤
+                </figcaption>
+            </figure>
+              <figure>
+                <img src="images/PXL5.JPG"
+                     alt="My favourite movie pursuit of Happyness "
+                     width="300">
+
+                <figcaption>
+                    My favourite movie pursuit of Happyness
+                </figcaption>
+            </figure>
+
+
+        </section>
+
+
+        <!-- Media -->
+        <section id="media">
+
+            <h2>My Media</h2>
+
+            <h3>My Short Video</h3>
+
+            <video controls width="400">
+
+                <source src="videos/PXL.mp4" type="video/mp4">
+
+                Your browser does not support the video element.
+
+            </video>
+
+            <!--written summary of videos-->
+            <p>in this video i introduced myself as second year 
+                computer science student </p>
+
+s
+            <h3>My Audio Recording</h3>
+
+            <audio controls>
+
+                <source src="videos/PXL14.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element.
+
+            </audio>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <form action="#" method="post">
+
+                <label for="Name">Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+
+                <label for="message">Message:</label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="40"
+                          required></textarea>
+
+                <br><br>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+
+            <p>
+                Note: This form does not send data to a server.
+                It is only for demonstrating how an HTML form works.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2026 My Web Page</p>
+
+    </footer>
+
+</body>
+
+</html>

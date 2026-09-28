@@ -1,0 +1,259 @@
+/* General page styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #222;
+    overflow-x: hidden;
+}
+/* Header */
+header {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: clamp(20px, 5vw, 30px) 15px;
+}
+header h1 {
+    margin: 0;
+    font-size: clamp(25px, 5vw, 32px);
+}
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1d70a2;
+    padding: 10px 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0;
+}
+nav a:hover,
+nav a:focus {
+    background-color: #0d466b;
+    border-radius: 5px;
+}
+/* Main content */
+main {
+    width: min(100% - 30px, 1000px);
+    margin: auto;
+    padding: clamp(15px, 3vw, 20px) 0;
+}
+/* Repeated sections */
+section {
+    background-color: white;
+    padding: clamp(15px, 3vw, 20px);
+    margin: 20px 0;
+    border: 1px solid #b8c7d1;
+    border-radius: 8px;
+}
+/* Unique section */
+#hobbies {
+    background-color: #eef6fb;
+}
+/* Section headings */
+h2 {
+    color: #12355b;
+    border-bottom: 2px solid #1d70a2;
+    padding-bottom: 5px;
+}
+h3 {
+    color: #1d70a2;
+}
+/* Photo gallery */
+#photos {
+    text-align: center;
+}
+#photos h2,
+#photos h3 {
+    text-align: center;
+}
+#photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 20px;
+}
+#photos h2,
+#photos h3 {
+    grid-column: 1 / -1;
+}
+/* Put photos side by side */
+#photos figure {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f7f9;
+    border: 1px solid #ccd6dd;
+    border-radius: 5px;
+}
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#photos img {
+    width: 100%;
+    height: auto;
+}
+/* Photo captions */
+#photos figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+/* Media */
+video,
+audio {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+video {
+    width: min(100%, 400px);
+}
+/* Table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #12355b;
+}
+th,
+td {
+
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;}
+th {
+
+    background-color: #12355b;
+    color: white;}
+/* Form */
+form {
+    width: 100%;
+    max-width: 600px;
+}
+input,
+textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+/* Submit button */
+button {
+    background-color: #1d70a2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 100%;
+}
+button:hover,
+button:focus {
+    background-color: #12355b;
+}
+/* Form focus */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 2px solid #1d70a2;
+    outline-offset: 2px;
+}
+/* Footer */
+footer {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 30px;
+}
+/* Tablet screens */
+@media (max-width: 768px) {
+    nav {
+        justify-content: stretch;
+    }
+    nav a {
+        flex: 1 1 auto;
+    }
+    section {
+        margin: 15px 0;
+    }
+}
+/* Mobile screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    nav {
+        display: block;
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    main {
+        width: min(100% - 20px, 1000px);
+    }
+    section {
+        padding: 15px;
+    }
+    #photos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    table {
+        font-size: 14px;
+    }
+    th,
+    td {
+    
+        padding: 8px;}
+    video {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}
