@@ -8,19 +8,34 @@
 
     <title>My First Web Page</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to Web Programming</h1>
-        <p>Suwilanji George Ngwira - 202506490</p>
-    </header>
+    <header class="hero">
+    <h1>Suwilanji George Ngwira</h1>
+
+    <p class="student-number">Student Number: 202506490</p>
+
+    <p class="programme">
+        Computer Science Student | Mulungushi University
+    </p>
+
+    <p class="intro">
+        Welcome to my student portfolio. I am learning web technologies
+        and developing my skills in HTML, CSS and JavaScript through
+        practical projects.
+    </p>
+
+    <a href="#projects" class="hero-button">View My Projects</a>
+</header>
 
     <nav>
         <a href="#about">About Me</a>
         <a href="#hobbies">My Hobbies</a>
         <a href="#learning">My Learning Plan</a>
+        <a herf="#projects">My projects</a>
         <a href="#photos">My Photos</a>
         <a href="#media">My Media</a>
         <a href="#contact">Contact</a>
@@ -29,6 +44,7 @@
            target="_blank">
             Learn Web Development
         </a>
+        <button type="button" id="theme-toggle">Dark Mode</button>
     </nav>
 
     <main>
@@ -114,67 +130,144 @@
 
         </section>
 
+        <!-- Projects and Skills -->
+        <section id="projects" class="content-section">
 
-        <!-- Photos -->
-        <section id="photos">
+    <h2>My Projects and Skills</h2>
 
-            <h2>My Photos</h2>
+    <div class="project-search">
+        <label for="project-search">Search my projects:</label>
 
-            <h3>My Photos Gallery</h3>
+        <input
+            type="text"
+            id="project-search"
+            placeholder="Type HTML, CSS or JavaScript"
+        >
 
-            <figure>
-                <img src="images/PXL3.jpg"
-                     alt="Me playing the guitar"
-                     width="300">
+        <button type="button" id="reset-search">Reset</button>
+    </div>
 
-                <figcaption>
-                    Me playing the guitar at a friend's place
-                </figcaption>
-            </figure>
+    <p id="no-projects" class="no-projects">
+        No matching projects found.
+    </p>
 
+    <div class="projects-container">
 
-            <figure>
-                <img src="images/PXL2.jpg"
-                     alt="Me sitting in a chair at a restaurant"
-                     width="300">
+                <article class="project-card">
+                    <h3>HTML5 Web Development</h3>
+                    <p>
+                        I have learned how to create webpages using HTML5,
+                        including headings, paragraphs, links, images, tables,
+                        forms and multimedia.
+                    </p>
+                    <button type="button" class="details-button">
+                        Show Details
+                    </button>
+                    <p class="project-details">
+                        I can structure a webpage using semantic elements such
+                        as header, nav, main, section and footer.
+                    </p>
+                </article>
 
-                <figcaption>
-                    Me sitting in a chair at a restaurant
-                </figcaption>
-            </figure>
+                <article class="project-card">
+                    <h3>CSS Web Design</h3>
+                    <p>
+                        I have learned how to use CSS to improve the appearance
+                        of webpages through colours, spacing, borders,
+                        typography and layouts.
+                    </p>
+                    <button type="button" class="details-button">
+                        Show Details
+                    </button>
+                    <p class="project-details">
+                        I can connect an external stylesheet and use selectors,
+                        the box model and responsive design techniques.
+                    </p>
+                </article>
 
+                <article class="project-card">
+                    <h3>JavaScript Programming</h3>
+                    <p>
+                        I am learning how JavaScript can make webpages
+                        interactive by responding to user actions and changing
+                        page content.
+                    </p>
+                    <button type="button" class="details-button">
+                        Show Details
+                    </button>
+                    <p class="project-details">
+                        I am learning to use variables, functions, events and
+                        DOM manipulation to create interactive features.
+                    </p>
+                </article>
 
-            <figure>
-                <img src="images/PXL4.jpg"
-                     alt="Outside taking in the view"
-                     width="300">
-
-                <figcaption>
-                    Outside taking in the view
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/PXL1.JPG"
-                     alt="picture with my mum "
-                     width="300">
-
-                <figcaption>
-                    with mrs ngwira my mum❤
-                </figcaption>
-            </figure>
-              <figure>
-                <img src="images/PXL5.JPG"
-                     alt="My favourite movie pursuit of Happyness "
-                     width="300">
-
-                <figcaption>
-                    My favourite movie pursuit of Happyness
-                </figcaption>
-            </figure>
-
+            </div>
 
         </section>
+
+        <!-- Photos -->
+        
+<section id="photos">
+
+    <h2>My Photos</h2>
+
+    <h3>My Photos Gallery</h3>
+
+    <div class="photo-gallery">
+
+        <figure>
+            <img src="images/PXL3.jpg"
+                 alt="Me playing the guitar">
+            <figcaption>
+                Me playing the guitar at a friend's place
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/PXL2.jpg"
+                 alt="Me sitting in a chair at a restaurant">
+            <figcaption>
+                Me sitting in a chair at a restaurant
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/PXL4.jpg"
+                 alt="Outside taking in the view">
+            <figcaption>
+                Outside taking in the view
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/PXL1.JPG"
+                 alt="Picture with my mum ❤">
+            <figcaption>
+                With Mrs Ngwira, my mum
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/PXL5.JPG"
+                 alt="My favourite movie, The Pursuit of Happyness">
+            <figcaption>
+                My favourite movie, The Pursuit of Happyness
+            </figcaption>
+        </figure>
+
+    </div>
+    <div class="gallery-viewer">
+
+    <img id="gallery-image" src="images/PXL3.jpg" alt="Me playing the guitar">
+
+    <p id="gallery-caption">Me playing the guitar at a friend's place</p>
+
+    <button type="button" id="previous-button">Previous</button>
+    <button type="button" id="next-button">Next</button>
+
+</div>
+
+</section>
 
 
         <!-- Media -->
@@ -215,50 +308,33 @@ s
 
             <h2>Contact</h2>
 
-            <form action="#" method="post">
+        <form id="contact-form">
 
-                <label for="Name">Name:</label>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-                <input type="text"
-                       id="name"
-                       name="name"
-                       required>
+    <small id="name-error" class="form-error"></small>
 
-                <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
+    <small id="email-error" class="form-error"></small>
 
-                <label for="email">Email:</label>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-                <input type="email"
-                       id="email"
-                       name="email"
-                       required>
+    <small id="message-error" class="form-error"></small>
 
-                <br><br>
+    <button type="submit">Validate Message</button>
 
+</form>
 
-                <label for="message">Message:</label>
+<div id="form-preview"></div>
 
-                <br>
-
-                <textarea id="message"
-                          name="message"
-                          rows="5"
-                          cols="40"
-                          required></textarea>
-
-                <br><br>
-
-
-                <button type="submit">Submit</button>
-
-            </form>
-
-
-            <p>
-                Note: This form does not send data to a server.
-                It is only for demonstrating how an HTML form works.
-            </p>
+<p>
+    Note: This form is a browser demonstration only.
+    No message is sent to a server.
+</p>
 
         </section>
 
