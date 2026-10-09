@@ -15,7 +15,7 @@ contactForm.addEventListener("submit", function (event) {
     const emailError = document.getElementById("email-error");
     const messageError = document.getElementById("message-error");
     const formPreview = document.getElementById("form-preview");
-
+//suwilanji ngwira
     // Clear previous feedback
     nameError.textContent = "";
     emailError.textContent = "";
